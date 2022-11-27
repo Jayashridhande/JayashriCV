@@ -1,0 +1,73 @@
+T1{
+    border: 2px;
+    padding: 2px;
+  }
+ table{
+    font-size: 30px;
+    color: rgb(248, 15, 15);
+ }
+th,
+tr,
+td {
+    border: solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 22px;
+    font-family: "Lucida Calligraphy";
+    Color: rgb(42, 16, 58);
+
+  }
+  .T1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .T1.cap {
+    padding: 10px 0 30px 0;
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-weight: bold;
+    Color:Red;
+  }
+  .T1 .s_no {
+    text-align: center;
+}
+
+  .T1 th {
+    font-size: 25px;
+  }
+  .container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #data {
+    margin-bottom: 10px;
+  }
+  #data input,
+  button {
+    padding: 10px;
+    width: 90px;
+  }
+  .T1 {
+    counter-reset: serial-number;
+  }
+  .T1 td:first-child:before {
+    counter-increment: serial-number;
+    content: counter(serial-number);
+    text-align:center;
+  }
+  .button_top,
+  .button_bottom {
+    background-color: rgb(243, 148, 180);
+    border: 2px solid rgb(32, 1, 7);
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Lucida Calligraphy";
+    font-size: 16px;
+    display: inline-block;
+    margin: auto 400px 40px;
+    cursor: pointer;
+    width: fit-content;
+  }
