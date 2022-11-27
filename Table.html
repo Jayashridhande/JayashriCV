@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudVandana</title>
+    <link rel="stylesheet" href="Table.css">
+
+</head>
+<body>
+    <Table class ="T1" id="myTable">
+        <caption class ="Cap"> Assignment-1</caption>
+        
+        <tr>
+        <th scope="col">SL. No.</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">City</th>
+        <th scope="col">Country</th>
+         </tr>
+        
+         <tbody>
+         <tr>
+            <td class ="s_no"></td>
+            <td>Akshay</td>
+            <td>Kolhe</td>
+            <td>Pune</td>
+            <td>India</td>   
+         </tr>
+
+         <tr>
+            <td class ="s_no"></td>
+            <td>Ashwini</td>
+            <td>Patil</td>
+            <td>Mumbai</td>
+            <td>India</td>
+         </tr>
+
+         <tr>
+            <td class ="s_no"></td>
+            <td>Jhon</td>
+            <td>Advik</td>
+            <td>Budhapest</td>
+            <td>Hungery</td>
+         </tr>
+         <tr>
+            <td class ="s_no"></td>
+            <td>Peter</td>
+            <td>Dock</td>
+            <td>Paris</td>
+            <td>France</td>
+         </tr>
+         <tr>
+            <td class ="s_no"></td>
+            <td>Ria</td>
+            <td>Shrivastwa</td>
+            <td>Jabalpur</td>
+            <td>India</td>
+         </tr>
+        </tbody>
+    </Table>
+    <br/>
+    <button class="button_bottom" type="button" onclick="myFunction_bottom()"> Add row to bottom</button>
+     <button class="button_top" type="button" onclick="myFunction_top()">Add row to top</button>
+
+     <script>
+      function myFunction_top(){
+         var table = document.getElementById("myTable");
+         var row =table.insertRow(1);
+         var c1 = row.insertCell(0);
+         var c2 = row.insertCell(1);
+         var c3 = row.insertCell(2);
+         var c4 = row.insertCell(3);
+         var c5 = row.insertCell(4);
+         c1.innerHTML ="";
+         c2.innerHTML ="Siddhi";
+         c3.innerHTML ="Zope";
+         c4.innerHTML ="Sedney";
+         c5.innerHTML ="Austerlia";
+      }
+      
+      function myFunction_bottom(){
+         var table = document.getElementById("myTable");
+         var row =table.insertRow(-1);
+         var v1 = row.insertCell(0);
+         var v2 = row.insertCell(1);
+         var v3 = row.insertCell(2);
+         var v4 = row.insertCell(3);
+         var v5 = row.insertCell(4);
+         v1.innerHTML ="";
+         v2.innerHTML ="Vaibhav";
+         v3.innerHTML ="Pandey";
+         v4.innerHTML ="Pune";
+         v5.innerHTML ="India";
+      }
+     </script>
+</body>
+</html
